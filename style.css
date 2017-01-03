@@ -1,0 +1,81 @@
+.header {
+    background-color: #f6856f ;
+    padding: 15px;
+    color: #FFFFFF;
+}
+li {
+    list-style-type: none;
+}
+.list {
+    overflow: auto;
+    height: 100px;
+}
+.form {
+    /*max-height: 250px;*/
+    width: 300px;
+    border-radius: 10px;
+    /*border: 1px solid;*/
+}
+.form button {
+    background-color: #f6856f ;
+    border-radius: 10px;
+    margin-left: 190px;
+    padding: 5px;
+
+}
+.form input {
+    margin: 8px 0px;
+}
+.ymaps-2-1-42-balloon__tail{
+    display: none !important;
+}
+.ymaps-2-1-42-balloon__content {
+    /*border-radius: 0px;*/
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.list .name {
+    font-weight: bold;
+    padding: 0px 10px;
+}
+.opinion_our {
+    color :   #f6856f ;
+}
+.insertName {
+    border-radius: 10px;
+}
+.insertDescription{
+    border-radius: 10px;
+    width: 280px;
+
+}
+.insertPos{
+    border-radius: 10px;
+}
+input {
+    margin: 8px 10px;
+    width: 280px;
+    outline:none;
+}
+textarea{
+    outline:none;
+}
+.nothingRecalls{
+    margin: 15px 0 10px;
+}
+.description{
+    padding: 0px 10px;
+    font-style: italic;
+}
+.position{
+    padding: 0px 10px;
+}
+.ymaps-2-1-42-balloon__layout{
+    border-radius: 25px;
+}
+.ymaps-2-1-42-balloon__content, .ymaps-2-1-42-balloon,.ymaps-2-1-42-balloon__layout{
+    border-radius: 10px;
+}
+.glyphicon-map-marker {
+    color: #FFFFFF;
+}

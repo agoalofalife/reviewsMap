@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yandex Map</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+<div id="map" style="width: 800px; height: 600px"></div>
+<script src="./build/build.js"></script>
+
+<script type="text/x-handlebars-template" id="form">
+    <div class="form">
+
+        <div class="header">
+
+            <span class="glyphicon glyphicon-map-marker"></span>
+            {{NamePosition}}
+
+
+        </div>
+        <div class="list" data-claster="{{clasterGroup}}">
+            {{#if list}}
+            {{#each list}}
+            <div><span class="name">{{name}}</span></span><span class="position"> {{position}}</span><span class="time"> {{time}}</span></div>
+            <div class="description">{{description}}</div>
+            {{/each}}
+            {{else}}
+            <p class="nothingRecalls">No reviews...</p>
+            {{/if}}
+
+        </div>
+        <h4 class="opinion_our">YOUR REVIEW</h4>
+        <div><input type="text" placeholder="Name" class="insertName"></div>
+        <div> <input type="text" placeholder="Enter location" class="insertPos"></div>
+        <div>  <textarea placeholder="Share your experiences"  class="insertDescription"></textarea></div>
+        <div><button id="add">Add</button></div>
+    </div>
+</script>
+</body>
+</html>
